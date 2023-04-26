@@ -1,0 +1,70 @@
+{% extends "base_bootstrap.html" %}
+<!-- <ul>
+    <li>
+        <p><a href="/polls">A Polls Application</a></p>
+    </li>
+    <li>
+        <p><a href="/hello">Test the session</a></p>
+    </li>
+    <li>
+        <p><a href="/demo1">Test the demo1 session</a></p>
+    </li>
+    <li>
+        <p><a href="/autos">Autos CRUD</a></p>
+    </li>
+    <li>
+        <p><a href="/cats">Cats CRUD</a></p>
+    </li>
+</ul> -->
+
+
+
+<!-- <html>
+
+<head>
+    <title>{{ settings.APP_NAME }}</title> -->
+    <!-- edit samples/settings.py and add APP_NAME='DJ4E Samples' or similar
+        Also make sure that home/context_processors.py exists and is included
+        settings.py context processors as 'home.context_processors.settings' -->
+<!-- </head>
+
+<body>
+    <h1>simple home page</h1>
+
+    {% if user.is_authenticated %}
+    <p>Authenticated as
+    <pre>
+Name: {{ user.get_full_name }}
+Email: {{ user.email }}
+Id: {{ user.id }}
+</pre>
+    </p>
+    <p>You can <a href="/accounts/logout">Logout</a></p>
+    {% else %}
+    <p>You can <a href="/accounts/login">Login</a> if you like.</p>
+    {% endif %}
+    {% if islocal %}
+    Some of the samples will require a user login to be created.
+    </p>
+    <p>
+        You can play with this code at
+        <a href="https://samples.dj4e.com" target="_blank">https://samples.dj4e.com</a>.
+        {% else %}
+        You
+        might need an account and password to log in for certain features. You might try this:
+
+        There is a part of this password that you need to guess. But if you have done your
+        homework, it should only take you one guess (instead of 100 guesses).
+        {% endif %}
+
+</body>
+
+</html> -->
+
+
+{% block content %}
+    <h1>Welcome to {{ settings.APP_NAME }}</h1>
+    <p>
+    Hello world.
+    </p>
+{% endblock content %}

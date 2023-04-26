@@ -1,0 +1,12 @@
+{% extends "base_bootstrap.html" %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="SUBMIT">
+    <input type="submit" onclick="window.location='{% url 'cats:cat_list' %}'; return false;" value="CANCEL">
+</form>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+<h2>You are in main.html of demo1 </h2>
+
+<h3>The cookies are</h3>
+{% for key, value in cookies.items %}
+<ul>
+    <li>
+         {{key}} : {{value}} 
+    </li>
+</ul>
+
+{% endfor %}

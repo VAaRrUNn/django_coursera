@@ -1,0 +1,11 @@
+{% extends "base_bootstrap.html" %}
+
+{% block content %}
+
+<p>Do you really wanna delete this ?</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" value="YES">
+</form>
+
+{% endblock %}
